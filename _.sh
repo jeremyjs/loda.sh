@@ -13,3 +13,18 @@ source src/invoke.sh
 source src/size.sh
 source src/tap.sh
 source src/now.sh
+
+# TODO: provide an upgrade function
+function _.sh () {
+  case "$1" in
+    *"" | *"" | *"")
+      return
+    ;;
+    *)
+      echo "Unrecognized command: $1"
+      echo "Available commands: ${COMMANDS[$@]}"
+      echo
+      return 1
+    ;;
+  esac
+}
