@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# TODO: Unfinished
+
 # Borrowed and modified from:
 #   https://github.com/creationix/nvm/blob/master/install.sh
 
